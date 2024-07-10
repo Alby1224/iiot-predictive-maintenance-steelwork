@@ -1,0 +1,98 @@
+template piano di carica pugin Dynamic Text:
+<table width=100% style='border:2px solid green'>
+  <tr>
+    <td style='border:0; background-color: green ; font-size:18px'>ordine:
+      <b style='font-size:20px'>
+      {{ID_ordine}}
+        </b>
+    </td>
+    <td style='border:0; text-align:center'>rimanenti:
+      <b style= 'font-size:20px'>
+      {{rimanenti}}
+      </b>
+    </td>
+    <td style='border:0; text-align:right'>bill totali:
+      <b style='font-size:20px'>
+      {{n_billette}}
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td style='border:0'>lunghezza:
+      {{lunghezza}}
+    </td>
+    <td style='border:0; text-align:center'>sezione:
+      {{sezione}}
+    </td>
+    <td style='border:0; text-align:center'>materiale:
+      {{materiale}}
+    <td style='border:0; text-align:center'>data_creazione:
+      {{date creazione 'DD MMM YYYY'}}
+    </td>
+  </tr>
+</table>
+
+select piano di carica:
+SELECT ID_ordine, lunghezza, sezione, materiale, 
+data_creazione at time zone 'Central European Standard Time' , 
+(n_billette- n_bill_pesate) as rimanenti, n_billette FROM dbo.ORDINI 
+WHERE stato_ordine = 1 
+
+Foto: canvas collegato a cartella
+
+select timestamp:
+SELECT  [data_sfornamento] at time zone 'Central European Standard Time', peso_prod_finito
+  FROM [dbo].[BILLETTE]
+  WHERE ID_billetta IN (SELECT ID_billetta FROM BILLETTE WHERE stato_billetta = 6)
+  GROUP BY data_sfornamento, peso_prod_finito
+
+select disponibilità:
+SELECT (valore/24.0)*100 as disponibilità FROM Laminazione.dbo.UTILITY WHERE ID_utility= 4
+
+select prestazioni;
+SELECT (valore/1140.0)*100 FROM Laminazione.dbo.UTILITY WHERE ID_utility= 5
+
+select qualità:
+SELECT AVG (qualita), CONVERT(date, data_fine AT TIME ZONE 'Central European Standard Time') as data_fine
+FROM ORDINI
+WHERE stato_ordine = 5
+ AND  $__timeFilter(data_fine) 
+GROUP BY CONVERT(date, data_fine AT TIME ZONE 'Central European Standard Time')
+
+select OEE:
+SELECT (
+(SELECT (valore/1140.0) FROM Laminazione.dbo.UTILITY WHERE ID_utility= 5)*
+(SELECT (valore/24.0) FROM Laminazione.dbo.UTILITY WHERE ID_utility= 4)*
+(SELECT (AVG (qualita))/100
+FROM ORDINI
+WHERE stato_ordine = 5
+  AND  $__timeFilter(data_fine)) *100 )as OEE
+
+select tonnellate tempo:
+SELECT SUM(peso_prod_finito) as tonnellate, 
+       CONVERT(date, data_uscita AT TIME ZONE 'Central European Standard Time') 
+FROM [dbo].[BILLETTE]
+WHERE stato_billetta = 6
+AND  $__timeFilter(data_uscita) 
+GROUP BY CONVERT(date, data_uscita AT TIME ZONE 'Central European Standard Time')
+
+select laminate tempo:
+SELECT  COUNT(ID_billetta) as totale, CONVERT(date, data_uscita AT TIME ZONE 'Central European Standard Time') as data_uscita
+  FROM [dbo].[BILLETTE]
+WHERE stato_billetta = 6
+ AND   $__timeFilter(data_uscita)
+GROUP BY CONVERT(date, data_uscita AT TIME ZONE 'Central European Standard Time')
+
+select ordini tempo:
+SELECT  COUNT(DISTINCT (ID_ordine)) as totale, CONVERT(date, data_fine AT TIME ZONE 'Central European Standard Time') 
+  FROM [dbo].ORDINI
+WHERE stato_ordine = 5
+  AND  $__timeFilter(data_fine) 
+GROUP BY CONVERT(date, data_fine AT TIME ZONE 'Central European Standard Time')
+
+
+AIC
+Il progetto è stato svolto in collaborazione con l’azienda Automazioni Industriali Capitanio, nella sede di Torbole Casaglia.
+Dal 1975 Automazioni Industriali Capitanio progetta, realizza ed installa in tutto il mondo impianti di automazione industriale. Grazie al profondo know how acquisito, l’azienda è in grado di sviluppare impianti chiavi in mano con soluzioni personalizzate in funzione delle esigenze del cliente. AIC cura ogni fase del processo di implementazione, dalla stesura delle specifiche, la progettazione HW e SW (sia PLC che di supervisione), la costruzione e il collaudo, fino all’installazione e la messa in servizio. AIC è oggi uno dei leader internazionali nella fornitura di sistemi di automazione per l'industria siderurgica, con particolare riguardo per i laminatoi a caldo per prodotti lunghi, grazie a più di 500 installazioni in oltre 40 paesi nel mondo e a una profonda competenza tecnica nel campo degli azionamenti in corrente continua e alternata, delle piattaforme di automazione, del controllo di processo e della calibrazione degli impianti. Altri servizi offerti includono innovativi sistemi di sicurezza su piattaforma PLC, impianti TVCC, sistemi di controllo delle emissioni e abbattimento polveri, impianti di trattamento acqua e formazione tecnica altamente specializzata.
+L’azienda ha già un suo modo di operare standard per quanto riguarda i software di HMI e SCADA, composto principalmente dall’uso di Ignition Automation, un software molto potente ma che anche per piccole applicazioni necessita di licenze di migliaia di euro.
+Per questo motivo si è deciso di indagare una soluzione open-source che potesse soddisfare le richieste dei clienti mentendo contenuti i costi.

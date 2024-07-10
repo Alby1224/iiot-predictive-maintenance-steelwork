@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Microsoft SQL Server: Database storico e gestionale di processo
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: iiot-mssql-server
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=IndustrialStrongPass2024!
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ../../data/backup:/var/opt/mssql/backup
+    restart: unless-stopped
+    networks:
+      - industrial-net
+
+  # Node-RED: Middleware di integrazione OT/IT, logica di automazione e dashboard operatore
+  nodered:
+    image: nodered/node-red:latest
+    container_name: iiot-nodered-engine
+    environment:
+      - TZ=Europe/Rome
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodered_data:/data
+      - ../node_red/flows.json:/data/flows.json:ro
+    depends_on:
+      - sqlserver
+    restart: unless-stopped
+    networks:
+      - industrial-net
+
+  # Grafana: Piattaforma di visualizzazione analitica real-time e supervisione SCADA
+  grafana:
+    image: grafana/grafana:latest
+    container_name: iiot-grafana-supervisor
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=marcusolsson-dynamictext-panel
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ../grafana:/etc/grafana/provisioning/dashboards
+    depends_on:
+      - sqlserver
+    restart: unless-stopped
+    networks:
+      - industrial-net
+
+volumes:
+  sqlserver_data:
+  nodered_data:
+  grafana_data:
+
+networks:
+  industrial-net:
+    driver: bridge

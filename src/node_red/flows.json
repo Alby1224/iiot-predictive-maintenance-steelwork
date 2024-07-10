@@ -1,0 +1,4476 @@
+[
+    {
+        "id": "48529951b889ab89",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "26cc15c386e1ec1b",
+        "type": "ui_text_input",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "lunghezza",
+        "tooltip": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "361b24c75ac65fe1"
+            ]
+        ]
+    },
+    {
+        "id": "1e950692fd632978",
+        "type": "ui_text_input",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "sez_laminato",
+        "tooltip": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "12a366d9d35f665e"
+            ]
+        ]
+    },
+    {
+        "id": "0e0ec4900af2ad75",
+        "type": "ui_text_input",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "materiale",
+        "tooltip": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "866dca9937192cb4"
+            ]
+        ]
+    },
+    {
+        "id": "361b24c75ac65fe1",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "lunghezza",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df1f80e49e994a36",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sezione",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "103a6bdddcc2c743",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "n_billette",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12a366d9d35f665e",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sez_laminato",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "866dca9937192cb4",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "materiale",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bedee2d021c4f34",
+        "type": "ui_text_input",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "n_billette",
+        "tooltip": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 440,
+        "y": 40,
+        "wires": [
+            [
+                "103a6bdddcc2c743"
+            ]
+        ]
+    },
+    {
+        "id": "88302c16929cab1e",
+        "type": "ui_text_input",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "sezione",
+        "tooltip": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "df1f80e49e994a36"
+            ]
+        ]
+    },
+    {
+        "id": "c5ba54cc2bb43127",
+        "type": "delay",
+        "z": "48529951b889ab89",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "349f5efd67c9099f"
+            ]
+        ]
+    },
+    {
+        "id": "349f5efd67c9099f",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "26cc15c386e1ec1b",
+                "88302c16929cab1e",
+                "1e950692fd632978",
+                "0e0ec4900af2ad75",
+                "9bedee2d021c4f34"
+            ]
+        ]
+    },
+    {
+        "id": "03075aeb459e4a61",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "11384a4c8a7ddb99",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "inserisci",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "' '",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "c5ba54cc2bb43127",
+                "dd082a7977993626"
+            ]
+        ]
+    },
+    {
+        "id": "dd082a7977993626",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "INSERT ORDINE",
+        "func": "var N_BILLETTE = global.get(\"n_billette\")\nvar LUNGHEZZA = global.get(\"lunghezza\")\nvar SEZIONE = global.get(\"sezione\")\nvar SEZ_LAMINATO = global.get(\"sez_laminato\")\nvar MATERIALE = global.get(\"materiale\")\nvar STATO_ORDINE = \"1\"\nvar N_BILL_PESATE = \"0\"\nvar N_BILL_INFORNATE = \"0\"\nvar N_BILL_SFORNATE = \"0\"\nvar N_BILL_LAMINATE = \"0\"\nvar QUALITA = \"0\"\n\nmsg.payload = \"INSERT INTO [dbo].[ORDINI] VALUES(\"\n\nif ((N_BILLETTE == \"\") || (N_BILLETTE == undefined)){\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + N_BILLETTE + \"',\"\n}\n\n    msg.payload = msg.payload + \"GETDATE(),\" //data_creazione\n\n    msg.payload = msg.payload + \"NULL,\" //data_fine\n    \nif ((LUNGHEZZA == \"\") || (LUNGHEZZA == undefined)){\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + LUNGHEZZA + \"',\"\n}\nif ((SEZIONE == \"\") || (SEZIONE == undefined)){\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + SEZIONE + \"',\"\n}\nif ((SEZ_LAMINATO == \"\") || (SEZ_LAMINATO == undefined)){\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + SEZ_LAMINATO + \"',\"\n}\nif ((MATERIALE == \"\") || (MATERIALE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + MATERIALE + \"',\"\n}\nif ((STATO_ORDINE == \"\") || (STATO_ORDINE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + STATO_ORDINE + \"',\"\n}\nif ((N_BILL_PESATE == \"\") || (N_BILL_PESATE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + N_BILL_PESATE + \"',\"\n}\nif ((N_BILL_INFORNATE == \"\") || (N_BILL_INFORNATE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + N_BILL_INFORNATE + \"',\"\n}\nif ((N_BILL_SFORNATE == \"\") || (N_BILL_SFORNATE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + N_BILL_SFORNATE + \"',\"\n}\nif ((N_BILL_LAMINATE == \"\") || (N_BILL_LAMINATE == undefined)) {\n    msg.payload = msg.payload + \"NULL,\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + N_BILL_LAMINATE + \"',\"\n}\nif ((QUALITA == \"\") || (QUALITA == undefined)) {\n    msg.payload = msg.payload + \"NULL )\"\n}\nelse{\n    msg.payload = msg.payload + \"'\" + QUALITA + \"')\" \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "c22a4e6f13e27006"
+            ]
+        ]
+    },
+    {
+        "id": "c22a4e6f13e27006",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "5135732f5fa009c2"
+            ]
+        ]
+    },
+    {
+        "id": "ceaba97f73bb1637",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "INSERT BILLETTA",
+        "func": "var oggetto_ID = global.get(\"ultimo_ID_ordine\")[0]\nvar oggetto_n = global.get(\"ultimo_n_billette\")[0]\nvar ULTIMO_ID_ORDINE = oggetto_ID.ID_ordine\nvar ULTIMO_N_BILLETTE = oggetto_n.n_billette\nvar i\nmsg.payload = \"\"\n\nfor(i=0; i<ULTIMO_N_BILLETTE; i++){\n    msg.payload = msg.payload + \" INSERT INTO [dbo].[BILLETTE] VALUES( '\" + ULTIMO_ID_ORDINE + \"', '1', GETDATE(), NULL, NULL, NULL, NULL, NULL, NULL, NULL) \"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "eb97cb152fc9d28a"
+            ]
+        ]
+    },
+    {
+        "id": "5135732f5fa009c2",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "SELECT ultimo ID_billetta ",
+        "func": "\nmsg.payload = \"SELECT TOP 1 ID_ordine FROM dbo.ORDINI ORDER BY ID_ordine DESC\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "fac64117fb2ed6d1"
+            ]
+        ]
+    },
+    {
+        "id": "7f689c809348c049",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "ultimo_ID_ordine",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "3",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 300,
+        "wires": [
+            [
+                "88b4942cb8051a31"
+            ]
+        ]
+    },
+    {
+        "id": "88b4942cb8051a31",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "SELECT ultimo_n_billette",
+        "func": "\nmsg.payload = \"SELECT TOP 1 n_billette FROM dbo.ORDINI ORDER BY ID_ordine DESC\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "22be965081a697d7"
+            ]
+        ]
+    },
+    {
+        "id": "2b5e4d173fa08dbf",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "ultimo_n_billette",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ultimo_n_billette",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "ceaba97f73bb1637"
+            ]
+        ]
+    },
+    {
+        "id": "eb97cb152fc9d28a",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 560,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22be965081a697d7",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "2b5e4d173fa08dbf"
+            ]
+        ]
+    },
+    {
+        "id": "fac64117fb2ed6d1",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 560,
+        "y": 300,
+        "wires": [
+            [
+                "7f689c809348c049"
+            ]
+        ]
+    },
+    {
+        "id": "395b7e7ba1a761c3",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "rimuovi billetta dal forno",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 940,
+        "wires": [
+            [
+                "a90d89da3c01ad81"
+            ]
+        ]
+    },
+    {
+        "id": "f568e04547973b7f",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "bill_sfornate+ 1",
+        "func": "\nmsg.payload = \"UPDATE dbo.ORDINI SET n_bill_sfornate = (n_bill_sfornate +1) WHERE ID_ordine = (SELECT TOP 1 ID_ordine FROM dbo.BILLETTE WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 3 ORDER BY ID_billetta ASC)) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 940,
+        "wires": [
+            [
+                "cd9d87e4d2c68c3e"
+            ]
+        ]
+    },
+    {
+        "id": "cde9dad46b8ad186",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato sfornamento",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [stato_billetta] = '4' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '3' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 980,
+        "wires": [
+            [
+                "df0d6a545942c3ad"
+            ]
+        ]
+    },
+    {
+        "id": "cd9d87e4d2c68c3e",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 940,
+        "wires": [
+            [
+                "32d37479ed8988db"
+            ]
+        ]
+    },
+    {
+        "id": "df0d6a545942c3ad",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 980,
+        "wires": [
+            [
+                "b65db08c2ba892fc"
+            ]
+        ]
+    },
+    {
+        "id": "8951da96b741388a",
+        "type": "ui_switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "Impianto",
+        "tooltip": "",
+        "group": "3066c1a84c4785b9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "b9abb0bf6d754679"
+            ]
+        ]
+    },
+    {
+        "id": "316fb58473d9f4fe",
+        "type": "inject",
+        "z": "48529951b889ab89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "8951da96b741388a"
+            ]
+        ]
+    },
+    {
+        "id": "b9abb0bf6d754679",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "impianto",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a90d89da3c01ad81",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 940,
+        "wires": [
+            [
+                "f568e04547973b7f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "32d37479ed8988db",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data sfornamento",
+        "func": "\nmsg.payload = \"UPDATE dbo.BILLETTE SET data_sfornamento = GETDATE() WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM dbo.BILLETTE WHERE stato_billetta = 3 ORDER BY ID_billetta ASC) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 940,
+        "wires": [
+            [
+                "dce949c49dee9d91"
+            ]
+        ]
+    },
+    {
+        "id": "dce949c49dee9d91",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 940,
+        "wires": [
+            [
+                "124282c63d153c81"
+            ]
+        ]
+    },
+    {
+        "id": "fd2263a45933d782",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "lamina billetta",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1060,
+        "wires": [
+            [
+                "1f07eba417a0f9ba"
+            ]
+        ]
+    },
+    {
+        "id": "3c06ba549fac3943",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 1060,
+        "wires": [
+            [
+                "85e6d11719952dfc",
+                "8430709be706025a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b65db08c2ba892fc",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato ordini 3",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[ORDINI] SET [stato_ordine] = '3' WHERE (n_bill_sfornate = n_billette) AND stato_ordine = 2 \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 980,
+        "wires": [
+            [
+                "f892f7309a4ca402"
+            ]
+        ]
+    },
+    {
+        "id": "f892f7309a4ca402",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1400,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41a3e43ece5c61e7",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "bill_laminate+ 1",
+        "func": "\nmsg.payload = \"UPDATE dbo.ORDINI SET n_bill_laminate = (n_bill_laminate +1) WHERE ID_ordine = (SELECT TOP 1 ID_ordine FROM dbo.BILLETTE WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 4 ORDER BY ID_billetta ASC)) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1060,
+        "wires": [
+            [
+                "c09b0d4bd0461c54"
+            ]
+        ]
+    },
+    {
+        "id": "cdb88edab8754191",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato laminazione",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [stato_billetta] = '5' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '4' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1100,
+        "wires": [
+            [
+                "dd006af640c5b2a2"
+            ]
+        ]
+    },
+    {
+        "id": "c09b0d4bd0461c54",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 1060,
+        "wires": [
+            [
+                "8ff18d7eaa9af789"
+            ]
+        ]
+    },
+    {
+        "id": "dd006af640c5b2a2",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 1100,
+        "wires": [
+            [
+                "b29590d6547468d3"
+            ]
+        ]
+    },
+    {
+        "id": "8ff18d7eaa9af789",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data laminazione",
+        "func": "\nmsg.payload = \"UPDATE dbo.BILLETTE SET data_laminazione = GETDATE() WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM dbo.BILLETTE WHERE stato_billetta = 4 ORDER BY ID_billetta ASC) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1060,
+        "wires": [
+            [
+                "44bf3bc8bb849a6d"
+            ]
+        ]
+    },
+    {
+        "id": "44bf3bc8bb849a6d",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1440,
+        "y": 1060,
+        "wires": [
+            [
+                "cdb88edab8754191"
+            ]
+        ]
+    },
+    {
+        "id": "57a9f31da2eaf5db",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato ordini 4",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[ORDINI] SET [stato_ordine] = '4' WHERE (n_bill_laminate = n_billette) AND stato_ordine = 3\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1480,
+        "wires": [
+            [
+                "3cc5b86bdd968a4d"
+            ]
+        ]
+    },
+    {
+        "id": "3cc5b86bdd968a4d",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 1480,
+        "wires": [
+            [
+                "529afca00bc501ff"
+            ]
+        ]
+    },
+    {
+        "id": "f35437213c8eb14f",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "pesa una billetta",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "97c686fc1226ee5b"
+            ]
+        ]
+    },
+    {
+        "id": "6f6c3b882beff04e",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 660,
+        "wires": [
+            [
+                "891e0cf160cc18d6"
+            ]
+        ]
+    },
+    {
+        "id": "2529cbca5595dbfa",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 660,
+        "wires": [
+            [
+                "c2ac41c82232bba9"
+            ]
+        ]
+    },
+    {
+        "id": "891e0cf160cc18d6",
+        "type": "random",
+        "z": "48529951b889ab89",
+        "name": "",
+        "low": "1500",
+        "high": "2500",
+        "inte": "true",
+        "property": "payload",
+        "x": 1220,
+        "y": 660,
+        "wires": [
+            [
+                "055b9a8f430e51dc"
+            ]
+        ]
+    },
+    {
+        "id": "055b9a8f430e51dc",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "assegna peso",
+        "func": "var PESO = msg.payload\n\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [peso] = '\" + PESO + \"' WHERE ID_billetta = ((SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 2 ORDER BY ID_billetta DESC))\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 700,
+        "wires": [
+            [
+                "3e78bf6f9a4d77ae"
+            ]
+        ]
+    },
+    {
+        "id": "3e78bf6f9a4d77ae",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 700,
+        "wires": [
+            [
+                "988223a908491d6a"
+            ]
+        ]
+    },
+    {
+        "id": "c2ac41c82232bba9",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato pesa",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [stato_billetta] = '2' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '1' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "6f6c3b882beff04e"
+            ]
+        ]
+    },
+    {
+        "id": "7ec6c09ac92fe33b",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "bill_pesate + 1",
+        "func": "\nmsg.payload = \"UPDATE dbo.ORDINI SET n_bill_pesate = (n_bill_pesate +1) WHERE ID_ordine = (SELECT TOP 1 ID_ordine FROM dbo.BILLETTE WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 1 ORDER BY ID_billetta ASC)) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "2529cbca5595dbfa"
+            ]
+        ]
+    },
+    {
+        "id": "d26e7c8bdb426476",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "7ec6c09ac92fe33b",
+                "e01c08ea67d993d3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "79e684e80ab8d4a0",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 760,
+        "wires": [
+            [
+                "d6df437801b38c72"
+            ]
+        ]
+    },
+    {
+        "id": "cd81dffff3351b76",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 800,
+        "wires": [
+            [
+                "816454e186a78a99"
+            ]
+        ]
+    },
+    {
+        "id": "76a431f2654d1b5c",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato infornamento",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [stato_billetta] = '3' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '2' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 800,
+        "wires": [
+            [
+                "cd81dffff3351b76"
+            ]
+        ]
+    },
+    {
+        "id": "bcfe5c884778b7ba",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "bill_infornate + 1",
+        "func": "\nmsg.payload = \"UPDATE dbo.ORDINI SET n_bill_infornate = (n_bill_infornate +1) WHERE ID_ordine = (SELECT TOP 1 ID_ordine FROM dbo.BILLETTE WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 2 ORDER BY ID_billetta DESC)) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 760,
+        "wires": [
+            [
+                "79e684e80ab8d4a0"
+            ]
+        ]
+    },
+    {
+        "id": "816454e186a78a99",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato ordini 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[ORDINI] SET [stato_ordine] = '2' WHERE (n_bill_infornate = n_bill_pesate and n_bill_infornate = n_billette) AND stato_ordine = 1 \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 800,
+        "wires": [
+            [
+                "626b53f11396a1a2"
+            ]
+        ]
+    },
+    {
+        "id": "626b53f11396a1a2",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 800,
+        "wires": [
+            [
+                "ea8dfc23d72046a5"
+            ]
+        ]
+    },
+    {
+        "id": "d6df437801b38c72",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data infornamento",
+        "func": "\nmsg.payload = \"UPDATE dbo.BILLETTE SET data_infornamento = GETDATE() WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM dbo.BILLETTE WHERE stato_billetta = 2 ORDER BY ID_billetta DESC) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 760,
+        "wires": [
+            [
+                "b5ab833eb5a8d3ef"
+            ]
+        ]
+    },
+    {
+        "id": "b5ab833eb5a8d3ef",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1420,
+        "y": 760,
+        "wires": [
+            [
+                "76a431f2654d1b5c"
+            ]
+        ]
+    },
+    {
+        "id": "a7d508fe66ed44f5",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "inserisci nel forno",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "987fbd1642ac25ca"
+            ]
+        ]
+    },
+    {
+        "id": "987fbd1642ac25ca",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 340,
+        "y": 760,
+        "wires": [
+            [
+                "31a0252a09c53114"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "31a0252a09c53114",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "foto",
+        "property": "foto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [
+                "dd08e0b5d4a0b080"
+            ],
+            [
+                "29598c6e033b0ac7"
+            ]
+        ]
+    },
+    {
+        "id": "ed3a9de52c3a5f59",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "foto",
+                "pt": "global",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea8dfc23d72046a5",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "foto",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 800,
+        "wires": [
+            [
+                "6cb7a14e5658d7ae"
+            ]
+        ]
+    },
+    {
+        "id": "1f07eba417a0f9ba",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "in_laminazione",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 1060,
+        "wires": [
+            [],
+            [
+                "3c06ba549fac3943"
+            ]
+        ]
+    },
+    {
+        "id": "ec354ffbc66c6be1",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "setta in_laminazione, foto e in_pesa a 0",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            [
+                "87572be2d511645b",
+                "310aa2460b63a7ae",
+                "bdc9539f97647de8"
+            ]
+        ]
+    },
+    {
+        "id": "87572be2d511645b",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_laminazione",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85e6d11719952dfc",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_laminazione",
+                "pt": "global",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "962ee5a97c176264",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_laminazione",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 1540,
+        "wires": [
+            [
+                "dd521dd4c4d2b25a"
+            ]
+        ]
+    },
+    {
+        "id": "310aa2460b63a7ae",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "foto",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29598c6e033b0ac7",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 1",
+        "func": "var FOTO = global.get(\"foto\");\n\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '0' WHERE ID_utility = 1\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 860,
+        "wires": [
+            [
+                "79251500c0804ff2"
+            ]
+        ]
+    },
+    {
+        "id": "79251500c0804ff2",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 860,
+        "wires": [
+            [
+                "2a339bc6729ba489"
+            ]
+        ]
+    },
+    {
+        "id": "b29590d6547468d3",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "SELECT materiale",
+        "func": "\nmsg.payload = \"SELECT materiale FROM dbo.ORDINI WHERE ID_ordine = (SELECT TOP 1 ID_ordine FROM dbo.BILLETTE WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = 5 ORDER BY ID_billetta ASC))\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1100,
+        "wires": [
+            [
+                "437b1f6657e7c713"
+            ]
+        ]
+    },
+    {
+        "id": "7ae3568a3ecada1c",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "materiale",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "materiale",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 1100,
+        "wires": [
+            [
+                "4a664a53437d0aa0"
+            ]
+        ]
+    },
+    {
+        "id": "437b1f6657e7c713",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 1100,
+        "wires": [
+            [
+                "7ae3568a3ecada1c"
+            ]
+        ]
+    },
+    {
+        "id": "b09a8b86671c7def",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "materiale",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 590,
+        "y": 1240,
+        "wires": [
+            [
+                "1f96457512fb123e"
+            ],
+            [
+                "c7d9b67315cd641c"
+            ],
+            [
+                "d41b3488ef9ded85"
+            ]
+        ]
+    },
+    {
+        "id": "1f96457512fb123e",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "gabbia 1",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1200,
+        "wires": [
+            [
+                "5e387ccdc1b412fa"
+            ]
+        ]
+    },
+    {
+        "id": "124282c63d153c81",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "SELECT peso",
+        "func": "\nmsg.payload = \"SELECT TOP 1 peso FROM dbo.BILLETTE WHERE stato_billetta = 3 ORDER BY ID_billetta ASC\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 940,
+        "wires": [
+            [
+                "4df744ef39251ae5"
+            ]
+        ]
+    },
+    {
+        "id": "4ba4e3185a2a9310",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "get_peso",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "peso_da_aggiornare",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1540,
+        "y": 940,
+        "wires": [
+            [
+                "8aed4d71e7ed5687"
+            ]
+        ]
+    },
+    {
+        "id": "4df744ef39251ae5",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1400,
+        "y": 940,
+        "wires": [
+            [
+                "4ba4e3185a2a9310"
+            ]
+        ]
+    },
+    {
+        "id": "5e387ccdc1b412fa",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1240,
+        "wires": [
+            [
+                "59d0b8e37276b8f8"
+            ]
+        ]
+    },
+    {
+        "id": "7d1b4c16fd697bee",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna peso gabbia 1",
+        "func": "var NUOVO_PESO = global.get(\"peso_prod_finito\");\n\nmsg.payload = \"UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 2    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 4   UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1340,
+        "wires": [
+            [
+                "69c10f6c4a55350b"
+            ]
+        ]
+    },
+    {
+        "id": "69c10f6c4a55350b",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1380,
+        "wires": [
+            [
+                "9b98936c439b1d4a"
+            ]
+        ]
+    },
+    {
+        "id": "4fd0388305ad025d",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna peso gabbia 2",
+        "func": "var NUOVO_PESO = global.get(\"peso_prod_finito\");\n\nmsg.payload = \"UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 5     UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 9 \"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1380,
+        "wires": [
+            [
+                "69c10f6c4a55350b"
+            ]
+        ]
+    },
+    {
+        "id": "16b8d191b0707be5",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna peso gabbia 3",
+        "func": "var NUOVO_PESO = global.get(\"peso_prod_finito\");\n\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 6  UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [usura] = (usura - \" + NUOVO_PESO + \") WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1420,
+        "wires": [
+            [
+                "69c10f6c4a55350b"
+            ]
+        ]
+    },
+    {
+        "id": "c296376462d860a3",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "materiale",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 510,
+        "y": 1380,
+        "wires": [
+            [
+                "7d1b4c16fd697bee"
+            ],
+            [
+                "4fd0388305ad025d"
+            ],
+            [
+                "16b8d191b0707be5"
+            ]
+        ]
+    },
+    {
+        "id": "c7d9b67315cd641c",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "gabbia 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1240,
+        "wires": [
+            [
+                "5e387ccdc1b412fa"
+            ]
+        ]
+    },
+    {
+        "id": "d41b3488ef9ded85",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "gabbia 3",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [valore] = '1' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1280,
+        "wires": [
+            [
+                "5e387ccdc1b412fa"
+            ]
+        ]
+    },
+    {
+        "id": "4a664a53437d0aa0",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "function 17",
+        "func": "var oggetto_materiale = global.get(\"materiale\")[0]\nvar MATERIALE = oggetto_materiale.materiale\nglobal.set(\"materiale\", MATERIALE);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 1100,
+        "wires": [
+            [
+                "bc22f6c07dc042ac"
+            ]
+        ]
+    },
+    {
+        "id": "8aed4d71e7ed5687",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "peso_prod_finito",
+        "func": "var oggetto_peso = global.get(\"peso_da_aggiornare\")[0]\nvar PESO_DA_AGGIORNARE = oggetto_peso.peso;\nvar NUOVO_PESO =  parseInt(PESO_DA_AGGIORNARE - ((PESO_DA_AGGIORNARE/100)*3));\n\nmsg.payload = \"UPDATE [dbo].[BILLETTE] SET [peso_prod_finito] = '\" + NUOVO_PESO + \"' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '3' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 980,
+        "wires": [
+            [
+                "9188cca68c77ac1f"
+            ]
+        ]
+    },
+    {
+        "id": "2a6a1fbf22d0dfee",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato fine",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[BILLETTE] SET [stato_billetta] = '6' WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM BILLETTE WHERE stato_billetta = '5' ORDER BY ID_billetta ASC)\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 1480,
+        "wires": [
+            [
+                "e9a526a54b998f54"
+            ]
+        ]
+    },
+    {
+        "id": "e9a526a54b998f54",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 440,
+        "y": 1540,
+        "wires": [
+            [
+                "962ee5a97c176264"
+            ]
+        ]
+    },
+    {
+        "id": "8430709be706025a",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "set utility 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '1' WHERE ID_utility = 2\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1060,
+        "wires": [
+            [
+                "bd337fd01fecdbbc"
+            ]
+        ]
+    },
+    {
+        "id": "bd337fd01fecdbbc",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 1060,
+        "wires": [
+            [
+                "41a3e43ece5c61e7"
+            ]
+        ]
+    },
+    {
+        "id": "dd521dd4c4d2b25a",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '0' WHERE ID_utility = 2\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1540,
+        "wires": [
+            [
+                "1305a2fdf9915509"
+            ]
+        ]
+    },
+    {
+        "id": "1305a2fdf9915509",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 960,
+        "y": 1540,
+        "wires": [
+            [
+                "84e3dedf4022a195"
+            ]
+        ]
+    },
+    {
+        "id": "84e3dedf4022a195",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "azzeramento gabbie",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [valore] = '0' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 1540,
+        "wires": [
+            [
+                "4079ac9b67d095bf"
+            ]
+        ]
+    },
+    {
+        "id": "4079ac9b67d095bf",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1320,
+        "y": 1540,
+        "wires": [
+            [
+                "14bb027b71e54b0d"
+            ]
+        ]
+    },
+    {
+        "id": "9188cca68c77ac1f",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 980,
+        "wires": [
+            [
+                "cde9dad46b8ad186"
+            ]
+        ]
+    },
+    {
+        "id": "8ce28e15c46bc55f",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "get_peso",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "peso_prod_finito",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 1140,
+        "wires": [
+            [
+                "f0c867f7fa67ea9e"
+            ]
+        ]
+    },
+    {
+        "id": "bc22f6c07dc042ac",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "SELECT peso",
+        "func": "\nmsg.payload = \"SELECT TOP 1 peso_prod_finito FROM dbo.BILLETTE WHERE stato_billetta = 5 ORDER BY ID_billetta ASC\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1140,
+        "wires": [
+            [
+                "d7d3510f459a3134"
+            ]
+        ]
+    },
+    {
+        "id": "d7d3510f459a3134",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 1140,
+        "wires": [
+            [
+                "8ce28e15c46bc55f"
+            ]
+        ]
+    },
+    {
+        "id": "5e6db06eddfa430a",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 1",
+        "func": "var FOTO = global.get(\"foto\");\n\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '2' WHERE ID_utility = 1\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 860,
+        "wires": [
+            [
+                "58bc2d7d63dcdf57"
+            ]
+        ]
+    },
+    {
+        "id": "58bc2d7d63dcdf57",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1420,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd08e0b5d4a0b080",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 1",
+        "func": "var FOTO = global.get(\"foto\");\n\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '1' WHERE ID_utility = 1\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 760,
+        "wires": [
+            [
+                "6ffcbb062a248df4"
+            ]
+        ]
+    },
+    {
+        "id": "6ffcbb062a248df4",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "bcfe5c884778b7ba"
+            ]
+        ]
+    },
+    {
+        "id": "2a339bc6729ba489",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "foto",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 860,
+        "wires": [
+            [
+                "ac7769c7d1449346"
+            ]
+        ]
+    },
+    {
+        "id": "ac7769c7d1449346",
+        "type": "delay",
+        "z": "48529951b889ab89",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 860,
+        "wires": [
+            [
+                "5e6db06eddfa430a"
+            ]
+        ]
+    },
+    {
+        "id": "a9cae41ac0de2450",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "foto corretta",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "ed3a9de52c3a5f59"
+            ]
+        ]
+    },
+    {
+        "id": "988223a908491d6a",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data etichetta",
+        "func": "\nmsg.payload = \"UPDATE dbo.BILLETTE SET data_stampa_etichetta = GETDATE() WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM dbo.BILLETTE WHERE stato_billetta = 2 ORDER BY ID_billetta DESC) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 700,
+        "wires": [
+            [
+                "d97f9f53013f0359"
+            ]
+        ]
+    },
+    {
+        "id": "d97f9f53013f0359",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b63f2c566b706e",
+        "type": "delay",
+        "z": "48529951b889ab89",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1440,
+        "y": 1240,
+        "wires": [
+            [
+                "c296376462d860a3"
+            ]
+        ]
+    },
+    {
+        "id": "f0c867f7fa67ea9e",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "function 18",
+        "func": "var oggetto_peso_finito = global.get(\"peso_prod_finito\")[0]\nvar PESO_FINITO = oggetto_peso_finito.peso_prod_finito\nglobal.set(\"peso_prod_finito\", PESO_FINITO);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1140,
+        "wires": [
+            [
+                "b09a8b86671c7def"
+            ]
+        ]
+    },
+    {
+        "id": "529afca00bc501ff",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data uscita",
+        "func": "\nmsg.payload = \"UPDATE dbo.BILLETTE SET data_uscita = GETDATE() WHERE ID_billetta = (SELECT TOP 1 ID_billetta FROM dbo.BILLETTE WHERE stato_billetta = 5 ORDER BY ID_billetta ASC) \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1480,
+        "wires": [
+            [
+                "30dbe070427b6ca8"
+            ]
+        ]
+    },
+    {
+        "id": "30dbe070427b6ca8",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1040,
+        "y": 1480,
+        "wires": [
+            [
+                "ba159445ab70d830"
+            ]
+        ]
+    },
+    {
+        "id": "799e43e55d5f1897",
+        "type": "ui_slider",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "velocità lam",
+        "tooltip": "",
+        "group": "3066c1a84c4785b9",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "30",
+        "max": "70",
+        "step": "1",
+        "className": "",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "c3399470468bf215"
+            ]
+        ]
+    },
+    {
+        "id": "c3399470468bf215",
+        "type": "rbe",
+        "z": "48529951b889ab89",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "fcc568cec2281c54"
+            ]
+        ]
+    },
+    {
+        "id": "e724dda89832ba0f",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "velocita",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "b0f38e1de4156800"
+            ]
+        ]
+    },
+    {
+        "id": "b0f38e1de4156800",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 3",
+        "func": "var VELOCITA = global.get(\"velocita\")\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '\" + VELOCITA + \"' WHERE ID_utility = 3\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 480,
+        "wires": [
+            [
+                "5c0627bbe135425a"
+            ]
+        ]
+    },
+    {
+        "id": "5c0627bbe135425a",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 960,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d4d172932e268c8",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "stato ordini 5",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[ORDINI] SET [stato_ordine] = '5' WHERE stato_ordine = 4\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1600,
+        "wires": [
+            [
+                "e8885ccd3346161c"
+            ]
+        ]
+    },
+    {
+        "id": "e8885ccd3346161c",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1320,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14bb027b71e54b0d",
+        "type": "random",
+        "z": "48529951b889ab89",
+        "name": "",
+        "low": "95",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 560,
+        "y": 1600,
+        "wires": [
+            [
+                "3e2bd527d83d6e36"
+            ]
+        ]
+    },
+    {
+        "id": "3e2bd527d83d6e36",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "qualita",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1600,
+        "wires": [
+            [
+                "f722d1b9b2012cb9"
+            ]
+        ]
+    },
+    {
+        "id": "f722d1b9b2012cb9",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "qualita",
+        "func": "var QUALITA = global.get(\"qualita\")\n\nmsg.payload =  \"UPDATE [dbo].[ORDINI] SET [qualita] = '\" + QUALITA + \"' WHERE ID_ordine = ( SELECT TOP 1 ID_ordine FROM ORDINI WHERE stato_ordine = 4 ORDER BY ID_ordine ASC )\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1600,
+        "wires": [
+            [
+                "44fdda7521b77f09"
+            ]
+        ]
+    },
+    {
+        "id": "44fdda7521b77f09",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1020,
+        "y": 1600,
+        "wires": [
+            [
+                "0d4d172932e268c8"
+            ]
+        ]
+    },
+    {
+        "id": "1c12e505bed39c83",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 13,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1700,
+        "wires": [
+            [
+                "60c1915a20f4d95b"
+            ]
+        ]
+    },
+    {
+        "id": "2b7ed16d7ad46f34",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 2\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1700,
+        "wires": [
+            [
+                "7456f1e3d790ab2d"
+            ]
+        ]
+    },
+    {
+        "id": "7456f1e3d790ab2d",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b99de6ea9621902",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 12,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1660,
+        "wires": [
+            [
+                "6e8092be06f9efd3"
+            ]
+        ]
+    },
+    {
+        "id": "b5e96914952feaec",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 1",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 1\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1660,
+        "wires": [
+            [
+                "d49c396462bc9e09"
+            ]
+        ]
+    },
+    {
+        "id": "d49c396462bc9e09",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ae928c63c3db84c",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 14,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1740,
+        "wires": [
+            [
+                "e2a8824d013d4309"
+            ]
+        ]
+    },
+    {
+        "id": "5e1f0e053c8a437c",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 3",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 3\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1740,
+        "wires": [
+            [
+                "909b836c6f4ce92d"
+            ]
+        ]
+    },
+    {
+        "id": "909b836c6f4ce92d",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fad63d55f5f3a5ca",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 15,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1780,
+        "wires": [
+            [
+                "5e8427bfc3291ecc"
+            ]
+        ]
+    },
+    {
+        "id": "c959afcc8e5a7f84",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 4",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 4\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1780,
+        "wires": [
+            [
+                "f2a5b050fd7c8d17"
+            ]
+        ]
+    },
+    {
+        "id": "f2a5b050fd7c8d17",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa6cedd19cae7e54",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 16,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1820,
+        "wires": [
+            [
+                "bfd2ec5d429deea6"
+            ]
+        ]
+    },
+    {
+        "id": "aabf331e20090a44",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 5",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 5\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1820,
+        "wires": [
+            [
+                "5dbb35529ac14e69"
+            ]
+        ]
+    },
+    {
+        "id": "5dbb35529ac14e69",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88c7b921382193a8",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 17,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 6",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1860,
+        "wires": [
+            [
+                "c8f67d15239ec444"
+            ]
+        ]
+    },
+    {
+        "id": "84dc9da920b114ae",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 6",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 6\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1860,
+        "wires": [
+            [
+                "969a53dd67fd7bbd"
+            ]
+        ]
+    },
+    {
+        "id": "969a53dd67fd7bbd",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a10f3a34837f7f9",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 18,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 7",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1900,
+        "wires": [
+            [
+                "7c8559847b7e3164"
+            ]
+        ]
+    },
+    {
+        "id": "14cc7a437cf56984",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 7",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 7\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1900,
+        "wires": [
+            [
+                "25bae475ef56f29d"
+            ]
+        ]
+    },
+    {
+        "id": "25bae475ef56f29d",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ee39d29420e0eca",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 19,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 8",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1940,
+        "wires": [
+            [
+                "49a52cb8a624513d"
+            ]
+        ]
+    },
+    {
+        "id": "e3cf3ced803f67ec",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 8",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 8\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1940,
+        "wires": [
+            [
+                "77dbe6a0dd865593"
+            ]
+        ]
+    },
+    {
+        "id": "77dbe6a0dd865593",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d48c57a14cb6ce50",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 20,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 9",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 1980,
+        "wires": [
+            [
+                "2bd687b58518f8cc"
+            ]
+        ]
+    },
+    {
+        "id": "39d95fe9a2201601",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 9",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 9\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1980,
+        "wires": [
+            [
+                "f89d68eff25a5c1b"
+            ]
+        ]
+    },
+    {
+        "id": "f89d68eff25a5c1b",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1aae93f3dfb2c5f7",
+        "type": "ui_button",
+        "z": "48529951b889ab89",
+        "name": "",
+        "group": "3066c1a84c4785b9",
+        "order": 21,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "manutenzione gabbia 10",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 2020,
+        "wires": [
+            [
+                "9765f327154391d5"
+            ]
+        ]
+    },
+    {
+        "id": "09f582292b917eb9",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "manutenzione gabbia 10",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [usura] = 20000000 WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2020,
+        "wires": [
+            [
+                "a2a9c3130b5831ec"
+            ]
+        ]
+    },
+    {
+        "id": "a2a9c3130b5831ec",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 880,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcc568cec2281c54",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "e724dda89832ba0f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6e8092be06f9efd3",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1660,
+        "wires": [
+            [],
+            [
+                "b5e96914952feaec"
+            ]
+        ]
+    },
+    {
+        "id": "60c1915a20f4d95b",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1700,
+        "wires": [
+            [],
+            [
+                "2b7ed16d7ad46f34"
+            ]
+        ]
+    },
+    {
+        "id": "e2a8824d013d4309",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1740,
+        "wires": [
+            [],
+            [
+                "5e1f0e053c8a437c"
+            ]
+        ]
+    },
+    {
+        "id": "5e8427bfc3291ecc",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1780,
+        "wires": [
+            [],
+            [
+                "c959afcc8e5a7f84"
+            ]
+        ]
+    },
+    {
+        "id": "bfd2ec5d429deea6",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1820,
+        "wires": [
+            [],
+            [
+                "aabf331e20090a44"
+            ]
+        ]
+    },
+    {
+        "id": "c8f67d15239ec444",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1860,
+        "wires": [
+            [],
+            [
+                "84dc9da920b114ae"
+            ]
+        ]
+    },
+    {
+        "id": "7c8559847b7e3164",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1900,
+        "wires": [
+            [],
+            [
+                "14cc7a437cf56984"
+            ]
+        ]
+    },
+    {
+        "id": "49a52cb8a624513d",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1940,
+        "wires": [
+            [],
+            [
+                "e3cf3ced803f67ec"
+            ]
+        ]
+    },
+    {
+        "id": "2bd687b58518f8cc",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 1980,
+        "wires": [
+            [],
+            [
+                "39d95fe9a2201601"
+            ]
+        ]
+    },
+    {
+        "id": "9765f327154391d5",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 2020,
+        "wires": [
+            [],
+            [
+                "09f582292b917eb9"
+            ]
+        ]
+    },
+    {
+        "id": "59d0b8e37276b8f8",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "materiale",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1010,
+        "y": 1240,
+        "wires": [
+            [
+                "42d5a79cc1e4db1f"
+            ],
+            [
+                "929db38412528885"
+            ],
+            [
+                "f23dc27e3b61432b"
+            ]
+        ]
+    },
+    {
+        "id": "42d5a79cc1e4db1f",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "riduzione 1",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [riduzione] = '1.76' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [riduzione] = '0.820' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [riduzione] = '2.43' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [riduzione] = '1.59' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [riduzione] = '0.610' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [riduzione] = '3.12' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [riduzione] = '1.80' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1200,
+        "wires": [
+            [
+                "5a10c83fceac7227"
+            ]
+        ]
+    },
+    {
+        "id": "5a10c83fceac7227",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1300,
+        "y": 1240,
+        "wires": [
+            [
+                "a1b63f2c566b706e"
+            ]
+        ]
+    },
+    {
+        "id": "929db38412528885",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "riduzione 2",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [riduzione] = '2.0' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [riduzione] = '0.15' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [riduzione] = '1.68' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [riduzione] = '4.3' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [riduzione] = '1.97' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [riduzione] = '2.26' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1240,
+        "wires": [
+            [
+                "5a10c83fceac7227"
+            ]
+        ]
+    },
+    {
+        "id": "f23dc27e3b61432b",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "riduzione 3",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE] SET [riduzione] = '1.34' WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE] SET [riduzione] = '1.93' WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE] SET [riduzione] = '2.36' WHERE ID_gabbia = 6     UPDATE [dbo].[GABBIE] SET [riduzione] = '0' WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE] SET [riduzione] = '0.310' WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE] SET [riduzione] = '1.21' WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE] SET [riduzione] = '0.85' WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1280,
+        "wires": [
+            [
+                "5a10c83fceac7227"
+            ]
+        ]
+    },
+    {
+        "id": "ba159445ab70d830",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "data fine",
+        "func": "\nmsg.payload = \"UPDATE dbo.ORDINI SET data_fine = GETDATE() WHERE stato_ordine = 4 \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 1480,
+        "wires": [
+            [
+                "5bb7ca29e6e69e36"
+            ]
+        ]
+    },
+    {
+        "id": "5bb7ca29e6e69e36",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1320,
+        "y": 1480,
+        "wires": [
+            [
+                "2a6a1fbf22d0dfee"
+            ]
+        ]
+    },
+    {
+        "id": "562efce8d932f671",
+        "type": "ui_slider",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "produzione effettiva",
+        "tooltip": "",
+        "group": "3066c1a84c4785b9",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "1000",
+        "max": "1140",
+        "step": "1",
+        "className": "",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "cf61a942287acef4"
+            ]
+        ]
+    },
+    {
+        "id": "cf61a942287acef4",
+        "type": "rbe",
+        "z": "48529951b889ab89",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "5fad0b7bd7437202"
+            ]
+        ]
+    },
+    {
+        "id": "c0f05119a778b2be",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "produzione",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "9e7d350f9a18d8fd"
+            ]
+        ]
+    },
+    {
+        "id": "9e7d350f9a18d8fd",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 5",
+        "func": "var PRODUZIONE = global.get(\"produzione\")\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '\" + PRODUZIONE + \"' WHERE ID_utility = 5\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 560,
+        "wires": [
+            [
+                "092789569aa14144"
+            ]
+        ]
+    },
+    {
+        "id": "092789569aa14144",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 960,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fad0b7bd7437202",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "c0f05119a778b2be"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bbebd4e4a2678bc1",
+        "type": "ui_slider",
+        "z": "48529951b889ab89",
+        "name": "",
+        "label": "t funzionamento",
+        "tooltip": "",
+        "group": "3066c1a84c4785b9",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "18",
+        "max": "20",
+        "step": "1",
+        "className": "",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "c0ae819bb655beec"
+            ]
+        ]
+    },
+    {
+        "id": "c0ae819bb655beec",
+        "type": "rbe",
+        "z": "48529951b889ab89",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 290,
+        "y": 520,
+        "wires": [
+            [
+                "1af0f06654f5fcf0"
+            ]
+        ]
+    },
+    {
+        "id": "d5ab2fa741eb199e",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "t_funzionamento",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 520,
+        "wires": [
+            [
+                "bd78af69104f7eb8"
+            ]
+        ]
+    },
+    {
+        "id": "bd78af69104f7eb8",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "utility 4",
+        "func": "var T_FUNZIONAMENTO = global.get(\"t_funzionamento\")\nmsg.payload =  \"UPDATE [dbo].[UTILITY] SET [valore] = '\" + T_FUNZIONAMENTO + \"' WHERE ID_utility = 4\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 520,
+        "wires": [
+            [
+                "3221270171c0f1d4"
+            ]
+        ]
+    },
+    {
+        "id": "3221270171c0f1d4",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 960,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1af0f06654f5fcf0",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "impianto",
+        "property": "impianto",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "d5ab2fa741eb199e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "97c686fc1226ee5b",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "in_pesa",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 660,
+        "wires": [
+            [],
+            [
+                "d26e7c8bdb426476"
+            ]
+        ]
+    },
+    {
+        "id": "e01c08ea67d993d3",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_pesa",
+                "pt": "global",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdc9539f97647de8",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_pesa",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1390,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cb7a14e5658d7ae",
+        "type": "change",
+        "z": "48529951b889ab89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "in_pesa",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1430,
+        "y": 800,
+        "wires": [
+            [
+                "ac7769c7d1449346"
+            ]
+        ]
+    },
+    {
+        "id": "4acd51ce5b6202d1",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna data gabbia 1",
+        "func": "\nmsg.payload = \"UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 2    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 4   UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 1340,
+        "wires": [
+            [
+                "900ff79f42f64c64"
+            ]
+        ]
+    },
+    {
+        "id": "900ff79f42f64c64",
+        "type": "MSSQL",
+        "z": "48529951b889ab89",
+        "mssqlCN": "06e6b874bf527f31",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1380,
+        "y": 1380,
+        "wires": [
+            [
+                "57a9f31da2eaf5db"
+            ]
+        ]
+    },
+    {
+        "id": "187ee636ed3f173f",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna data gabbia 2",
+        "func": "\nmsg.payload = \"UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 1   UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 3    UPDATE [dbo].[GABBIE] SET [data_lettura] = GETDATE() WHERE ID_gabbia = 4    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 5     UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 7    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 9 \"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 1380,
+        "wires": [
+            [
+                "900ff79f42f64c64"
+            ]
+        ]
+    },
+    {
+        "id": "c43c3d4ec1840594",
+        "type": "function",
+        "z": "48529951b889ab89",
+        "name": "aggiorna data gabbia 3",
+        "func": "\nmsg.payload =  \"UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 2   UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 5    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 6  UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 8    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 9    UPDATE [dbo].[GABBIE]  SET [data_lettura] = GETDATE() WHERE ID_gabbia = 10\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 1420,
+        "wires": [
+            [
+                "900ff79f42f64c64"
+            ]
+        ]
+    },
+    {
+        "id": "9b98936c439b1d4a",
+        "type": "switch",
+        "z": "48529951b889ab89",
+        "name": "",
+        "property": "materiale",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1010,
+        "y": 1380,
+        "wires": [
+            [
+                "4acd51ce5b6202d1"
+            ],
+            [
+                "187ee636ed3f173f"
+            ],
+            [
+                "c43c3d4ec1840594"
+            ]
+        ]
+    },
+    {
+        "id": "11384a4c8a7ddb99",
+        "type": "ui_group",
+        "name": "Inserimento",
+        "tab": "3ed5390a4a83f95a",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "06e6b874bf527f31",
+        "type": "MSSQL-CN",
+        "name": "CONNESSIONE_DB",
+        "server": "172.24.0.1",
+        "encyption": false,
+        "database": "Laminazione"
+    },
+    {
+        "id": "3066c1a84c4785b9",
+        "type": "ui_group",
+        "name": "Comandi",
+        "tab": "3ed5390a4a83f95a",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ed5390a4a83f95a",
+        "type": "ui_tab",
+        "name": "Laminatoio",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
